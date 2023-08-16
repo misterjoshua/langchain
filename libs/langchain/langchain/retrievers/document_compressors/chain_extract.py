@@ -96,7 +96,7 @@ class LLMChainExtractor(BaseDocumentCompressor):
         cls,
         llm: BaseLanguageModel,
         prompt: Optional[PromptTemplate] = None,
-        get_input: Optional[Callable[[str, Document], str]] = None,
+        get_input: Optional[Callable[[str, Document], dict]] = None,
         llm_chain_kwargs: Optional[dict] = None,
     ) -> LLMChainExtractor:
         """Initialize from LLM."""
